@@ -1,11 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { checkStatus } from '../redux/categories/categoriesSlice';
 
-function categories() {
+const Categories = () => {
+  const dispatch = useDispatch();
+  const [show, setShow] = useState(true);
+  const categories = useSelector((state) => state.categories.categories);
+
+  const categoryHandler = () => {
+    setShow(false);
+    dispatch(checkStatus());
+  };
+
   return (
     <div>
-      <button type="button">Check status</button>
+      {show && (
+        <button hidden={!show} type="button" onClick={() => categoryHandler()}>
+          Check status
+        </button>
+      )}
+      {show ? (
+        <p />
+      ) : (
+        <ul>
+          {categories.map((category) => (
+            <li key={category.id}>{category.category}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
-}
+};
 
-export default categories;
+export default Categories;
