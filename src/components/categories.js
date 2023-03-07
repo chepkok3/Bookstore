@@ -1,6 +1,6 @@
 import React from 'react';
 
-function categories() {
+function Categories() {
   return (
     <div>
       <button type="button">Check status</button>
@@ -8,4 +8,4 @@ function categories() {
   );
 }
 
-export default categories;
+export default Categories;

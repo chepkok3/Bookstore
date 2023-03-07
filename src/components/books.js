@@ -2,7 +2,7 @@ import React from 'react';
 import Book from './Book';
 import Form from './Form';
 
-function books() {
+function Books() {
   return (
     <div>
       <Book />
@@ -11,4 +11,4 @@ function books() {
   );
 }
 
-export default books;
+export default Books;
