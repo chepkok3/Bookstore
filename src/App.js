@@ -6,13 +6,13 @@ import Categories from './components/categories';
 
 function App() {
   return (
-    <>
+    <div className="book-container">
       <Nav />
       <Routes>
         <Route path="/" element={<Books />} />
         <Route path="categories" element={<Categories />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
