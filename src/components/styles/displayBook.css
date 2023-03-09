@@ -1,0 +1,137 @@
+:root {
+  --main-color: #4386bf;
+}
+
+.displayBook {
+  display: flex;
+  justify-content: space-between;
+  width: 91%;
+  height: 8.5em;
+  margin: 0 0.063em 0.938em 0;
+  padding: 2em 2.5em;
+  border-radius: 4px;
+  border: solid 1px #fff;
+  background-color: #fff;
+}
+
+.book-details {
+  width: 50%;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 0 5em 0 10em;
+}
+
+.category-name {
+  color: rgb(12, 12, 12, 0.4);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+}
+
+.book-title {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 1.5em;
+}
+
+.book-author {
+  color: var(--main-color);
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.actions {
+  display: flex;
+  gap: 1em;
+  padding-bottom: 1em;
+}
+
+.comments {
+  color: var(--main-color);
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.remove-btn {
+  color: var(--main-color);
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: red;
+}
+
+.edit-btn {
+  color: var(--main-color);
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.progress-oval {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1em;
+}
+
+.oval {
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  border: 5px solid var(--main-color);
+  border-left-color: #e8e8e8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.progress-percent {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-rows: minmax(0, 1fr);
+}
+
+.percentage {
+  color: black;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.completed {
+  color: rgb(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.current-chapter {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  color: rgb(10, 10, 10, 0.4);
+}
+
+.chapter-name {
+  color: rgb(10, 10, 10, 0.8);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.chapter-btn {
+  background-color: #0290ff;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 0.5rem 1.35rem;
+}

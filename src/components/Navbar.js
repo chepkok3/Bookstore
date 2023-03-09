@@ -1,25 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Icon } from '@iconify/react';
+import './styles/Navbar.css';
 
 function Nav() {
   return (
     <nav>
-      <div
-        className="nav-content"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-around',
-          gap: '2px',
-        }}
-      >
-        <h1 className="header">Bookstore CMS</h1>
-        <Link to="/" style={{ textDecoration: 'none' }}>
-          Books
+      <div className="nav-content">
+        <h1 className="bookstore-header">Bookstore CMS</h1>
+        <Link className="books" to="/">
+          BOOKS
         </Link>
-        <Link to="/categories" style={{ textDecoration: 'none' }}>
-          Categories
+        <Link className="categories" to="categories">
+          CATEGORIES
         </Link>
+      </div>
+      <div className="logo">
+        <Icon icon="ion:person-sharp" />
       </div>
     </nav>
   );
