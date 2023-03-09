@@ -1,3 +1,7 @@
+:root {
+  --darkgrey: darkgrey;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -22,10 +26,10 @@ nav {
 .bookstore-header {
   font-size: 2rem;
   color: rgb(41, 106, 180);
+  margin-left: -2.5rem;
 }
 
 .books {
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -33,11 +37,10 @@ nav {
   line-height: normal;
   letter-spacing: 1.9px;
   color: var(--black-two);
-  color: darkgrey;
+  color: var(--darkgrey);
 }
 
 .categories {
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.813rem;
   font-weight: normal;
   font-stretch: normal;
@@ -45,7 +48,7 @@ nav {
   line-height: normal;
   letter-spacing: 1.9px;
   color: var(--black-two);
-  color: darkgrey;
+  color: var(--darkgrey);
 }
 
 .logo {
@@ -55,4 +58,5 @@ nav {
   border-radius: 30px;
   cursor: pointer;
   color: #4386bf;
+  margin-right: -60px;
 }
