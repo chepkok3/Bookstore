@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  box-shadow: -1px 2px 0 -1px #e8e8e8;
+  font-family: 'Montserrat', sans-serif;
+  height: 5.938rem;
+  margin: 0 0 2.375rem;
+}
+
+.nav-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-content a {
+  text-decoration: none;
+  line-height: 6rem;
+}
+
+.bookstore-header {
+  font-size: 2rem;
+  color: rgb(41, 106, 180);
+}
+
+.books {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+  color: darkgrey;
+}
+
+.categories {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+  color: darkgrey;
+}
+
+.logo {
+  background-color: white;
+  padding: 0.8rem;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #4386bf;
+}

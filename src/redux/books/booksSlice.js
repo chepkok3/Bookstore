@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
 import axios from 'axios';
 
-const BASE_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/oS2s9KsEcOXZ2AbFmgRy';
+const BASE_URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/0UD9wEkhYw6tYur2Oone';
 
 // retrieve books from the API
 export const getBooks = createAsyncThunk('books/getBooks', async () => {

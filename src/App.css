@@ -1,4 +1,10 @@
-.bookBody {
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.book-container {
   width: 84rem;
   margin: 0;
   border-radius: 4px;

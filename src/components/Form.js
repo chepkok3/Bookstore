@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook, postBooks } from '../redux/books/booksSlice';
+import './styles/Form.css';
 
 function Form() {
   const [title, setTitle] = useState('');
